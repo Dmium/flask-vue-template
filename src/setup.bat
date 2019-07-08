@@ -1,3 +1,3 @@
 set FLASK_APP=projectname
-pip install -e .
+pip install --user -e .
 flask run
