@@ -1,8 +1,9 @@
 from projectname import app, db
+from flask import render_template
 
 @app.route('/')
 def index():
-    return 'Hello, World!'
+    return render_template("index.html")
 
 @app.route('/config/init/')
 def init_database():
